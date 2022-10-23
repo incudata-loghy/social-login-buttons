@@ -7,6 +7,7 @@ body {
   display: grid;
   row-gap: 10px;
   column-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 a.social-login-button {
