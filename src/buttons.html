@@ -8,13 +8,91 @@
   <title>Social Login Buttons</title>
 
   <link rel="stylesheet" href="./css/social-login-buttons.css">
+  <script type="text/javascript" src="./js/last-login.js"></script>
 </head>
 
 <body>
 
   <div class="container">
 
-    <a class="social-login-button line" href="#">
+    <div class="last-login container line d-none">
+      <div class="last-login title">前回のログイン</div>
+      <a class="social-login-button last-login line" data-provider="line" href="return.html">
+        <div class="social-login-button mouse-over black"></div>
+        <div class="social-login-button icon-container">
+          <img class="social-login-button content icon" src="img/icons/line.png" />
+        </div>
+        <div class="social-login-button content text">Sign in with LINE</div>
+      </a>
+    </div>
+
+    <div class="last-login container google d-none">
+      <div class="last-login title">前回のログイン</div>
+      <a class="social-login-button last-login google" data-provider="google" href="return.html">
+        <div class="social-login-button mouse-over black"></div>
+        <div class="social-login-button icon-container">
+          <img class="social-login-button content icon" src="img/icons/google.png" />
+        </div>
+        <div class="social-login-button content text">Sign in with Google</div>
+      </a>
+    </div>
+
+    <div class="last-login container apple d-none">
+      <div class="last-login title">前回のログイン</div>
+      <a class="social-login-button last-login apple" data-provider="apple"  href="return.html">
+        <div class="social-login-button mouse-over white"></div>
+        <div class="social-login-button icon-container">
+          <img class="social-login-button content icon" src="img/icons/apple.png" />
+        </div>
+        <div class="social-login-button content text">Sign in with Apple</div>
+      </a>
+    </div>
+
+    <div class="last-login container yahoo-japan d-none">
+      <div class="last-login title">前回のログイン</div>
+      <a class="social-login-button last-login yahoo-japan" data-provider="yahoo-japan" href="return.html">
+        <div class="social-login-button mouse-over black"></div>
+        <div class="social-login-button icon-container">
+          <img class="social-login-button content icon" src="img/icons/yahoo_japan.png" />
+        </div>
+        <div class="social-login-button content text">Sign in with Yahoo! JAPAN ID</div>
+      </a>
+    </div>
+
+    <div class="last-login container twitter d-none">
+      <div class="last-login title">前回のログイン</div>
+      <a class="social-login-button last-login twitter" data-provider="twitter" href="return.html">
+        <div class="social-login-button mouse-over black"></div>
+        <div class="social-login-button icon-container">
+          <img class="social-login-button content icon" src="img/icons/twitter.png" />
+        </div>
+        <div class="social-login-button content text">Sign in with Twitter</div>
+      </a>
+    </div>
+
+    <div class="last-login container facebook d-none">
+      <div class="last-login title">前回のログイン</div>
+      <a class="social-login-button last-login facebook" data-provider="facebook" href="return.html">
+        <div class="social-login-button mouse-over black"></div>
+        <div class="social-login-button icon-container">
+          <img class="social-login-button content icon" src="img/icons/facebook.png" />
+        </div>
+        <div class="social-login-button content text">Sign in with Facebook</div>
+      </a>
+    </div>
+
+    <div class="last-login container tiktok d-none">
+      <div class="last-login title">前回のログイン</div>
+      <a class="social-login-button last-login tiktok" data-provider="tiktok" href="return.html">
+        <div class="social-login-button mouse-over white"></div>
+        <div class="social-login-button icon-container">
+          <img class="social-login-button content icon" src="img/icons/tiktok.png" />
+        </div>
+        <div class="social-login-button content text">Sign in with TikTok</div>
+      </a>
+    </div>
+
+    <a class="social-login-button line" data-provider="line" href="return.html">
       <div class="social-login-button mouse-over black"></div>
       <div class="social-login-button icon-container">
         <img class="social-login-button content icon" src="img/icons/line.png" />
@@ -22,7 +100,7 @@
       <div class="social-login-button content text">Sign in with LINE</div>
     </a>
 
-    <a class="social-login-button google" href="#">
+    <a class="social-login-button google" data-provider="google" href="return.html">
       <div class="social-login-button mouse-over black"></div>
       <div class="social-login-button icon-container">
         <img class="social-login-button content icon" src="img/icons/google.png" />
@@ -30,7 +108,7 @@
       <div class="social-login-button content text">Sign in with Google</div>
     </a>
 
-    <a class="social-login-button apple" href="#">
+    <a class="social-login-button apple" data-provider="apple" href="return.html">
       <div class="social-login-button mouse-over white"></div>
       <div class="social-login-button icon-container">
         <img class="social-login-button content icon" src="img/icons/apple.png" />
@@ -38,7 +116,7 @@
       <div class="social-login-button content text">Sign in with Apple</div>
     </a>
 
-    <a class="social-login-button yahoo-japan" href="#">
+    <a class="social-login-button yahoo-japan" data-provider="yahoo-japan" href="return.html">
       <div class="social-login-button mouse-over black"></div>
       <div class="social-login-button icon-container">
         <img class="social-login-button content icon" src="img/icons/yahoo_japan.png" />
@@ -46,7 +124,7 @@
       <div class="social-login-button content text">Sign in with Yahoo! JAPAN ID</div>
     </a>
 
-    <a class="social-login-button twitter" href="#">
+    <a class="social-login-button twitter" data-provider="twitter" href="return.html">
       <div class="social-login-button mouse-over black"></div>
       <div class="social-login-button icon-container">
         <img class="social-login-button content icon" src="img/icons/twitter.png" />
@@ -54,15 +132,15 @@
       <div class="social-login-button content text">Sign in with Twitter</div>
     </a>
 
-    <a class="social-login-button facebook" href="#">
+    <a class="social-login-button facebook" data-provider="facebook" href="return.html">
       <div class="social-login-button mouse-over black"></div>
       <div class="social-login-button icon-container">
         <img class="social-login-button content icon" src="img/icons/facebook.png" />
       </div>
-      <div class="social-login-button content text">Sign in with Twitter</div>
+      <div class="social-login-button content text">Sign in with Facebook</div>
     </a>
 
-    <a class="social-login-button tiktok" href="#">
+    <a class="social-login-button tiktok" data-provider="tiktok" href="return.html">
       <div class="social-login-button mouse-over white"></div>
       <div class="social-login-button icon-container">
         <img class="social-login-button content icon" src="img/icons/tiktok.png" />
